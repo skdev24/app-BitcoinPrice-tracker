@@ -88,6 +88,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 currencyPrice.append(String(tempResult))
                 currencySymbol.append(tempResult2)
                 storedPrice.append(String(tempResult))
+                tableView.reloadData()
             } else {
                 print("Bitcoin Unavailable")
             }
